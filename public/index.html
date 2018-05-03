@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Microblog</title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+
+
+    <div class="container">
+        <div class="row">
+          <div class="col">
+              <ul class="nav flex-column border-right">
+                  <li class="nav-item">
+                      <a class="nav-link active" href="#title-1">Title1</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" name="blog1" href="#">Title2</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" name="blog2" href="#">Title3</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link disabled" name="blog3">Disabled</a>
+                  </li>
+                </ul>
+          </div>
+          <div class="col-6">
+            <h1>Top Heading</h1>
+            <br>
+            <div class='blog1'>
+              <h2><a name="title-1">Title1</a></h2>
+                <p>this is some text</p>
+            </div>
+            <br>
+            <div class='blog2'>
+              <h2>Title2</h2>
+                <p>this is some text</p>
+            </div>
+            <br>
+            <div class='blog3'>
+              <h2>Title3</h2>
+              <p>this is some text</p>
+            </div>
+            <br>
+            <form action="submit the form">
+            <div class="form-group">
+                <label for="exampleTextarea">Type out your post!</label>
+                <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
