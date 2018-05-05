@@ -7,17 +7,17 @@ class TitleList extends Component {
         <ul className="nav flex-column">
           <li className="nav-item">
             <a className="nav-link active" href="#title-1">
-              Title1
+              {this.props.title1}
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link" name="blog1" href="#">
-              Title2
+            {this.props.title2}
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link" name="blog2" href="#">
-              Title3
+            {this.props.title3}
             </a>
           </li>
           <li className="nav-item">
@@ -25,7 +25,7 @@ class TitleList extends Component {
               Disabled
             </a>
           </li>
-        </ul>
+          </ul>
       </div>
     );
   }
