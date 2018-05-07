@@ -30,10 +30,10 @@ class App extends Component {
         
         <div className="row">
           <div className="col-sm-6">
-            <TitleList 
-              title1={this.state[0].title}
-              title2={this.state[1].title}
-              title3={this.state[2].title}
+            <TitleList titles={["One", "Two", "Three"]}
+              // title1={this.state[0].title}
+              // title2={this.state[1].title}
+              // title3={this.state[2].title}
             />
           </div>
 
