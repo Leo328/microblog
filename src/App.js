@@ -24,7 +24,7 @@ class App extends Component {
   }
   render() {
     const titles = this.state.map(post => post.title);
-    console.log("titles=", titles);
+
     return (
       <div className="App">
         <Jumbotron />
