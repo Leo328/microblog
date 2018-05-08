@@ -2,11 +2,13 @@ import React, { Component } from "react";
 
 class PostList extends Component {
   render() {
+    // props.posts = [{title: ... ,body: ...}, {title: ..., body: ...}]
     return (
       <div>
         <div>
           <h1>Top Heading</h1>
-          <br />
+          {/* {this.props.posts.map(post => (
+            <Post props=post> */}
         </div>
 
         {/* <div className="blog1">
@@ -16,19 +18,8 @@ class PostList extends Component {
           <p>this is some text</p>
         </div>
 
-        <br />
-        <div className="blog2">
-          <h2>Title2</h2>
-          <p>this is some text</p>
-        </div>
-
-        <br />
-        <div className="blog3">
-          <h2>Title3</h2>
-          <p>this is some text</p>
-        </div> */}
-        
-        </div>
+         */}
+      </div>
     );
   }
 }
