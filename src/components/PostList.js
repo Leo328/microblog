@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 
 class PostList extends Component {
-  render() {
+  render() 
+    // const 
     // props.posts = [{title: ... ,body: ...}, {title: ..., body: ...}]
     return (
       <div>
