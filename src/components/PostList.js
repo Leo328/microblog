@@ -1,12 +1,17 @@
 import React, { Component } from "react";
+import Post from "./Post";
 
 class PostList extends Component {
   render() {
+    // const
+    // props.posts = [{title: ... ,body: ...}, {title: ..., body: ...}]
     return (
       <div>
         <div>
           <h1>Top Heading</h1>
-          <br />
+          {this.props.posts.map(post => (
+            <Post title={post.title} body={post.body} />
+          ))}
         </div>
 
         {/* <div className="blog1">
@@ -16,19 +21,8 @@ class PostList extends Component {
           <p>this is some text</p>
         </div>
 
-        <br />
-        <div className="blog2">
-          <h2>Title2</h2>
-          <p>this is some text</p>
-        </div>
-
-        <br />
-        <div className="blog3">
-          <h2>Title3</h2>
-          <p>this is some text</p>
-        </div> */}
-        
-        </div>
+         */}
+      </div>
     );
   }
 }
