@@ -8,7 +8,7 @@ class PostList extends Component {
         <div>
           <h1>Top Heading</h1>
           {this.props.posts.map(post => (
-            <Post title={post.title} body={post.body}/>
+            <Post key={post.id} title={post.title} body={post.body}/>
           ))} 
         </div>
     );

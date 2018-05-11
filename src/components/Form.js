@@ -12,20 +12,28 @@ class Form extends Component {
     onTitleChange = (event) => {
         this.setState({
             title: event.target.value,
-            body: this.state.body
+            // body: this.state.body
         })
     }
 
     onBodyChange = (event) => {
         this.setState({
-            title: this.state.title,
+            // title: this.state.title,
             body: event.target.value
         })
     }
 
     submitForm = (event) => {
-        console.log(this.state)
         event.preventDefault()
+
+        console.log(this.state)
+
+        // call a function we got as a prop from parent, "addNewPost", passing it title + body
+        // this is basically   "componentThatRenderedMe [aka App].addNewPost(title, body)"
+        const fnToCall = this.props.callMeToAddNewPost;
+        console.log("fn", fnToCall);
+        fnToCall(this.state.title, this.state.body)
+        
         this.setState({title: '', body: ''});
     }   
     
@@ -34,7 +42,7 @@ class Form extends Component {
             <div className="row">
                 <form onSubmit={this.submitForm}>
                     <div className="form-group">
-                        <input type="title" class="form-control"  placeholder="Title" value={this.state.title} onChange={this.onTitleChange}/>
+                        <input type="title" className="form-control"  placeholder="Title" value={this.state.title} onChange={this.onTitleChange}/>
                         <br/>
                         <textarea className="form-control" id="exampleTextarea" placeholder="Body"rows="3" value={this.state.body} onChange={this.onBodyChange}></textarea>
                     </div>
